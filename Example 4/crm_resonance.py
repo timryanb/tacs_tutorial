@@ -58,13 +58,6 @@ modalProb.writeSolution()
 modalProb.solve()
 modalProb.writeSolution()
 
-numEigs = modalProb.getNumEigs()
-
-for i in range(numEigs):
-    eigVal, eigVec = modalProb.getVariables(i)
-    f_hz = np.sqrt(eigVal) / 2 / np.pi
-    print(f"freq {i+1}: {f_hz}")
-
 transientProb = FEAAssembler.createTransientProblem("CRMResonance", 0.0, 5.0, 100, options={"printLevel": 2})
 
 eigVal0, eigVec0 = modalProb.getVariables(0)
