@@ -55,9 +55,6 @@ for mode_i in range(nmodes):
     print(f"mode {mode_i}: {f_hz} hz")
 modalProb.writeSolution()
 
-modalProb.solve()
-modalProb.writeSolution()
-
 transientProb = FEAAssembler.createTransientProblem("CRMResonance", 0.0, 5.0, 100, options={"printLevel": 2})
 
 eigVal0, eigVec0 = modalProb.getVariables(0)
