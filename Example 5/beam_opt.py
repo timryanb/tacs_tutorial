@@ -37,3 +37,5 @@ staticProblem.addLoadToNodes(27, F, nastranOrdering=True)
 # Add eval functions
 staticProblem.addFunction("mass", functions.StructuralMass)
 staticProblem.addFunction("ks_failure", functions.KSFailure, ksWeight=100.0)
+
+#### Finish the rest!

@@ -47,3 +47,5 @@ def elemCallBack(dvNum, compID, compDescript, elemDescripts, globalDVs, **kwargs
 
 # Set up elements and TACS assembler
 FEAAssembler.initialize(elemCallBack)
+
+#### Finish the rest!
